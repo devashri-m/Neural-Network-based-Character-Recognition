@@ -1,4 +1,4 @@
-# Handwritten-Digit-Recognition
+# Neural-Network-based-Character-Recognition
 
 **Datasets**
 EMNIST:
