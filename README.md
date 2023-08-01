@@ -5,7 +5,7 @@ EMNIST:
 The Extended MNIST or EMNIST dataset expands on the MNIST database commonly used as a benchmark, adding handwritten letters as well as additional samples of handwritten digits.
 There are several “splits” of the data by various characteristics. We will be using the “EMNIST Letters” dataset, which contains values split into 27 classes, one unused (class 0) and one for each letter in the English alphabet.
 Note: Some classes in this dataset can be challenging to recognize because each class contains images of both upper- and lower-case letters. For example, while ‘C’ and ‘c’ are very similar in appearance, ‘A’ and ‘a’ are quite different.
-The file emnist_letter.npz contains EMNIST Letters in a format that can be opened with the numpy.load() method. The data contains six arrays: 'train_images', 'train_labels', 'validate_images', 'validate_labels', 'test_images', and 'test_labels'. The values have been adjusted from the original EMNIST dataset in order to match the MNIST examples included with Keras:
+The file emnist_letter.npz contains EMNIST Letters in a format that can be opened with the numpy.load() method. The data contains six arrays: 'train_images', 'train_labels', 'validate_images', 'validate_labels', 'test_images', and 'test_labels'. The values have been adjusted from the original EMNIST dataset in order to match the MNIST examples included with Keras: <br>
 ●	The images have been transposed and scaled to floating point.
 ●	The labels have been one-hot encoded.
 Binary AlphaDigits:
