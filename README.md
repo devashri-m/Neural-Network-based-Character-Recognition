@@ -1,6 +1,6 @@
 # Neural Network-based Character Recognition
 
-# Datasets
+# Datasets <br>
 EMNIST:
 The Extended MNIST or EMNIST dataset expands on the MNIST database commonly used as a benchmark, adding handwritten letters as well as additional samples of handwritten digits.
 There are several “splits” of the data by various characteristics. We will be using the “EMNIST Letters” dataset, which contains values split into 27 classes, one unused (class 0) and one for each letter in the English alphabet.
@@ -16,7 +16,7 @@ The file binaryalphadigits.npz contains the letters from this dataset, in a form
 Note, however, that the resolution of the images is different in this dataset: 20×16 rather than 28×28.
 
 #Tasks
-**Part 1 - Warm-Up**
+#Part 1 - Warm-Up
 1.	Open this notebook by Francois Chollet, which creates a simple Multilayer Perceptron as described in Section 2.1 of Deep Learning with Python, Second Edition. (Recall that this book is available from the library’s O’Reilly database.)
 Chollet’s example uses the simpler MNIST dataset, which includes only handwritten digits. That dataset is included with Keras.
 Run the model from this notebook. What accuracy does it achieve for MNIST?
@@ -26,7 +26,7 @@ Note: You are welcome to use PyTorch to implement the same architecture; Keras i
 What accuracy do you achieve? How does this compare with the accuracy for MNIST?
 4.	The Keras examples include a Simple MNIST convnet. Note the accuracy obtained by that code compared to the previous example from Chollet.
 Apply the same architecture to the EMNIST Letters data. (Again, you are welcome to implement an equivalent architecture in PyTorch instead). What accuracy do you achieve? How does this compare with the accuracy for the MNIST? How does it compare with the accuracy for EMNIST that you saw with a Dense network in step (3)?
-**Part 2 - Main Event**
+#Part 2 - Main Event
 5.	You should have found that while the EMNIST Letters are harder to learn than the MNIST digits, switching to a different network architecture led to a significant increase in model performance.
 You may have noticed, however, that the training process was slower. This means that experiments take longer, and mistakes can be costly. While plotting a learning curve when training has finished can help diagnose problems, ideally you will want to see updates during the training process.
 In order to avoid dead-ends while adjusting and tuning your model, TensorFlow includes the TensorBoard tool and the TensorBoard notebook extension for this purpose. While the examples show Keras models, PyTorch supports TensorBoard as well.
@@ -46,7 +46,7 @@ Used Techniques are:
 ●	Pooling 
 
    
-**Part 3 - Transfer Learning**
+#Part 3 - Transfer Learning
 
 9.	The process of transfer learning can be used to apply an existing model to a new dataset. See Transfer learning & fine-tuning in the Keras Developer Guide or the Transfer Learning for Computer Vision Tutorial in the PyTorch Tutorials.
 The images in the Binary Alphadigits dataset are a different size from those in EMNIST Letters. Use a function like tf.image.resize_with_pad(), PIL.ImageOps.pad(), or the PyTorch torchvision.transforms.Resize class to resize them into the right format for the network you trained in Part 2.
