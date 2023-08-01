@@ -1,6 +1,6 @@
-# Neural-Network-based-Character-Recognition
+# Neural Network-based Character Recognition
 
-**Datasets**
+# Datasets
 EMNIST:
 The Extended MNIST or EMNIST dataset expands on the MNIST database commonly used as a benchmark, adding handwritten letters as well as additional samples of handwritten digits.
 There are several “splits” of the data by various characteristics. We will be using the “EMNIST Letters” dataset, which contains values split into 27 classes, one unused (class 0) and one for each letter in the English alphabet.
@@ -15,7 +15,7 @@ The file binaryalphadigits.npz contains the letters from this dataset, in a form
 ●	The labels are in the same format as EMNIST Letters, including the unused class 0.
 Note, however, that the resolution of the images is different in this dataset: 20×16 rather than 28×28.
 
-**Tasks**
+#Tasks
 **Part 1 - Warm-Up**
 1.	Open this notebook by Francois Chollet, which creates a simple Multilayer Perceptron as described in Section 2.1 of Deep Learning with Python, Second Edition. (Recall that this book is available from the library’s O’Reilly database.)
 Chollet’s example uses the simpler MNIST dataset, which includes only handwritten digits. That dataset is included with Keras.
@@ -47,6 +47,7 @@ Used Techniques are:
 
    
 **Part 3 - Transfer Learning**
+
 9.	The process of transfer learning can be used to apply an existing model to a new dataset. See Transfer learning & fine-tuning in the Keras Developer Guide or the Transfer Learning for Computer Vision Tutorial in the PyTorch Tutorials.
 The images in the Binary Alphadigits dataset are a different size from those in EMNIST Letters. Use a function like tf.image.resize_with_pad(), PIL.ImageOps.pad(), or the PyTorch torchvision.transforms.Resize class to resize them into the right format for the network you trained in Part 2.
 10.	Is the model you trained in Part 2 capable of recognizing letters from this new dataset?
