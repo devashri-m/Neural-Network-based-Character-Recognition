@@ -47,12 +47,12 @@ Used Techniques are:
 
    
 # Part 3 - Transfer Learning
-
-9.	The process of transfer learning can be used to apply an existing model to a new dataset. See Transfer learning & fine-tuning in the Keras Developer Guide or the Transfer Learning for Computer Vision Tutorial in the PyTorch Tutorials.
+7.	The process of transfer learning can be used to apply an existing model to a new dataset. See Transfer learning & fine-tuning in the Keras Developer Guide or the Transfer Learning for Computer Vision Tutorial in the PyTorch Tutorials.
+8.	The process of transfer learning can be used to apply an existing model to a new dataset. See Transfer learning & fine-tuning in the Keras Developer Guide or the Transfer Learning for Computer Vision Tutorial in the PyTorch Tutorials.
 The images in the Binary Alphadigits dataset are a different size from those in EMNIST Letters. Use a function like tf.image.resize_with_pad(), PIL.ImageOps.pad(), or the PyTorch torchvision.transforms.Resize class to resize them into the right format for the network you trained in Part 2.
-10.	Is the model you trained in Part 2 capable of recognizing letters from this new dataset?
-11.	Can you improve the performance on this dataset by adding additional trainable layers and fine-tuning the network?
-12.	Compare the performance of the model you built in step (3) with the performance of a brand-new model trained only on the Binary AlphaDigits dataset.
+9.	Is the model you trained in Part 2 capable of recognizing letters from this new dataset?
+10.	Can you improve the performance on this dataset by adding additional trainable layers and fine-tuning the network?
+11.	Compare the performance of the model you built in step (3) with the performance of a brand-new model trained only on the Binary AlphaDigits dataset.
 Note: the dataset is so small that this may be a valid use-case for cross-validation.
 What do you conclude about the value of reusing a pre-trained model?
 
